@@ -29,31 +29,94 @@
 	<div id="formularyWebApp">
 
 
-		<md-layout md-align="center">
-			<md-layout md-flex="33">
+		<md-layout>
+			<!-- main container  -->
+			<md-layout md-flex="20">
+				<!-- sidebar  -->
 
-				<md-card class="md-primary">
+				<md-layout md-align="center">
+					<md-layout md-flex="80">
 
-
-					<md-card-header>
-						<div class="md-title">Title goes here</div>
-						<div class="md-subhead">Subtitle here</div>
-					</md-card-header>
-
-					<md-card-actions>
-						<md-button>Action</md-button>
-						<md-button>Action</md-button>
-					</md-card-actions>
-
-					<md-card-content>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.
-					</md-card-content>
-				</md-card>
+						<md-button-toggle class="fw md-raised md-primary" md-single>
+							<md-button>F</md-button>
+							<md-button>R</md-button>
+							<md-button>S</md-button>
+						</md-button-toggle>
+					</md-layout>
+				</md-layout>
 
 
+				<md-input-container>
+					<label>With label</label>
+					<md-input placeholder="My nice placeholder"></md-input>
+				</md-input-container>
+
+				<md-list class="fw">
+					<md-list-item>
+						<span>[Regimen1 Name]</span>
+						<md-button class="md-icon-button md-list-action">
+							<md-icon class="md-primary">remove circle</md-icon>
+						</md-button>
+					</md-list-item>
+					<md-list-item>
+						<span>[Regimen2 Name]</span>
+						<md-button class="md-icon-button md-list-action">
+							<md-icon >remove circle</md-icon>
+						</md-button>
+					</md-list-item>
+					<md-list-item>
+						<span>[Drug Name]</span>
+						<md-button class="md-icon-button md-list-action">
+							<md-icon class="md-primary">remove circle</md-icon>
+						</md-button>
+					</md-list-item>
+				</md-list>
+
+
+
+				<md-speed-dial md-mode="scale" class="md-fab-bottom-left">
+					<md-button class="md-fab" md-fab-trigger>
+						<md-icon md-icon-morph>close</md-icon>
+						<md-icon>pageview</md-icon>
+					</md-button>
+
+					<md-button class="md-primary md-mini md-clean">
+						View All Formulary
+					</md-button>
+
+					<md-button class="md-primary md-mini md-clean">
+						View All Regimens
+					</md-button>
+				</md-speed-dial>
 
 			</md-layout>
+			<md-layout>
+				<!-- card layout area  -->
+
+				<md-layout md-flex="50" md-flex-offset="25">
+					<md-card class="md-primary">
+						<md-card-header>
+							<div class="md-title">Title goes here</div>
+							<div class="md-subhead">Subtitle here</div>
+						</md-card-header>
+
+						<md-card-actions>
+							<md-button>Action</md-button>
+							<md-button>Action</md-button>
+						</md-card-actions>
+
+						<md-card-content>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.
+						</md-card-content>
+					</md-card>
+				</md-layout>
+
+			</md-layout>
+			<!-- card layout area  -->
 		</md-layout>
+		<!-- main container  -->
+
+
 
 	</div>
 
